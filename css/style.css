@@ -55,6 +55,10 @@ q:before, q:after {
 	content: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -520,6 +524,18 @@ margin-bottom: 90px;
 max-width: 251px;
 }
 
+.benefits-name-product{
+    max-width: 352px; 
+}
+
+.benefits-name-keys{
+    max-width: 437px;   
+}
+
+.benefits-name-studio{
+    max-width: 331px;   
+}
+
 .benefit-card-desk{
     font-weight: 600;
     font-size: 30px;
@@ -570,5 +586,232 @@ max-width: 309px;
     justify-content: space-between;
 }
 
+.benefits__card_product{
+    background: #F4F4F4;
+    border-radius: 25px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    
+    flex: 30%;
+    width: 50%;
+    Height:563px;
+    margin: 0 10px 20px 10px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+   
+}
+.benefits__card_studio{
+    background: #F4F4F4;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+    flex: 30%;
+    width: 50%;
+    Height:263px;
+    margin: 0 10px 20px 10px;
+    
+    
+    padding-left:40px ;
+    padding-bottom:40px ; 
+}
 
 
+.benefits__card-title_product{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    display: block;
+    color: #000000;
+    max-width: 263px;  
+    
+    
+}
+.benefits__card-title_keys{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    display: block;
+    color: #000000;
+    max-width: 453px;  
+    
+    
+}
+
+
+
+.text_product{
+    max-width: 414px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000000;
+    padding-right: 35px;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price_link {
+    padding: 16px 26px;
+    background-color: red;
+    border-radius: 25px;
+    color: white;
+    font-size: 30px;
+}
+
+.benefits__card_bottom{
+    display: flex;
+    width:483px;
+    justify-content: space-between;  
+}
+
+
+.img-studio{
+    
+    border-radius: 25px;
+    display: flex;
+    width: 1146px;
+    Height:644px;
+    padding-left:40px ;
+    padding-bottom:20px ; 
+    background: url(../img/Rectangle64.jpg) no-repeat right center;
+  
+   
+}
+.img-studio_2{
+    padding-top: 360px;
+    border-radius: 25px;
+    display: flex;
+    width: 1720px;
+    Height:600px;
+   padding-bottom: 360px; 
+    background: url(../img/Rectangle65.jpg) no-repeat right center;   
+}
+
+
+.footer{
+  width: 100%;
+  
+}
+
+.footer__list{
+    display: flex;
+ 
+  }
+  .footer__item{
+ 
+    display: flex; 
+    flex-direction: column;
+    
+  }
+  .footer__item:last-child{
+    margin-right: 0;
+  }
+  .footer__link{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #181818;
+    text-decoration: none;
+    padding-bottom: 40px;
+    padding-right: 160px;
+       
+  }
+  .footer__link-0{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #181818;
+    text-decoration: none;
+    padding-bottom: 40px;
+    padding-right: 160px;
+    width: 113px;
+    
+  }
+  .footer__link-2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #000000;
+    opacity: 0.5;
+    padding-bottom: 20px;
+    
+    max-width: 166px;
+  }
+  .footer__link3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #181818;
+    text-decoration: none;
+    padding-bottom: 20px;
+   
+  }
+  .footer__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 40px;
+    max-width: 1720px;
+    height: 311px;
+    border: 0;
+    border-top: 1px solid #000000;
+    
+        
+    }
+    
+    .footer__wrapper_logo{
+        float:left;
+    }
+    .footer__wrapper_nav{
+        display: flex;
+        flex-wrap: wrap;
+        max-width:1050px;   
+    }
+    .footer__logo1{
+        display: flex;
+        Width:40px;
+        Height:40px;
+       padding-bottom: 120px; 
+       padding-left: 0%;
+       
+        background: url(../img/Ellipse13.svg) no-repeat right center;
+    }
+    .footer__logo2{
+       
+        display: flex;
+        Width:86px;
+        Height:36px;
+       padding-bottom: 40px; 
+       padding-left: 0%;
+       
+        background: url(../img/icon-bx\ 1.svg) no-repeat right center;  
+
+    }
+
+    .footer__logo3{
+        display: flex;
+        Width:82px;
+        Height:24.83px;
+       padding-bottom: 40px; 
+       padding-left: 0%;
+      
+        background: url(../img/mir-logo\ 1.svg) no-repeat right center;
+    }
+
+    .footer__logo4{
+        display: flex;
+        width:53.29px;
+        Height:57.97px;
+       padding-bottom: 40px; 
+       padding-left: 0%;
+      
+        background: url(../img/Vector\ \(1\).svg) no-repeat right center;
+    }
