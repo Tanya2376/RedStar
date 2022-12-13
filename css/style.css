@@ -404,7 +404,7 @@ img{
 }
 
 .container{
-    width: 1760px;
+    max-width: 1760px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -437,7 +437,9 @@ max-width: 1720px;
 height: 24px;
 
 
+
 }
+
 
 .logoRS{
 background:transparent url(../img/logo.svg) no-repeat left 6px;   
@@ -447,12 +449,13 @@ font-size: 20px;
 line-height: 24px;
 color: #FFFFFF;
 padding-left: 34px;
-margin-right: 598px;
+
 }
 
 .header__list{
   display: flex;
   flex-wrap: wrap;
+
  
 }
 .header__item{
@@ -762,7 +765,7 @@ max-width: 309px;
     max-width: 1720px;
     height: 311px;
     border: 0;
-    border-top: 1px solid #000000;
+    border-top: 1px solid rgba(0, 0, 0, 1);
     
         
     }
@@ -815,3 +818,130 @@ max-width: 309px;
       
         background: url(../img/Vector\ \(1\).svg) no-repeat right center;
     }
+
+
+
+
+
+
+  
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  
+ 
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+ 
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.nav_list{
+display: flex;
+   }
+ 
+
+.nav__item{
+ display: flex; 
+    flex-direction: column;
+}
+
+
+
+    
+    .nav__wrapper_logo{
+        float:left;
+    }
+    .nav__wrapper_nav{
+        display: flex;
+        flex-wrap: wrap;
+        max-width:1050px;   
+    }
+
+    .logoRS1{
+        background:transparent url(../img/logo.svg) no-repeat left 6px;   
+        background-size: 10px; 
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #181818;;
+        padding-left: 34px;
+        margin-right: 598px;
+        }
+
+        /*media start*/
+
+       
+        
+        @media only screen and (max-width: 1720px){
+        .container{
+          display: block;
+        }
+        .header__wrapper{
+            width: 100%;
+        }
+        
+       
+        }
+
+        @media only screen and (max-width: 1420px){
+        .benefist{
+          width: 100%;
+          margin: 0 auto;
+        }
+        .intro{
+            width: 100%;
+            margin: 0 auto; 
+        }
+        .intro__title{
+            width: 100%;
+            margin: 0 auto; 
+        }
+        .img-studio{
+            width: 100%;
+        }
+
+        .img-studio_2{
+            width: 100%; 
+            margin: 0 auto;
+        }
+       
+        }
+
+        @media only screen and (max-width: 1140px){
+          
+        }
+
+        @media only screen and (max-width: 1080px){
+            .footer__wrapper_nav{
+                width: 100% ;
+                margin: 0 auto;
+                height:100% ;
+            }
+        }
