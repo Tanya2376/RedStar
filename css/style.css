@@ -1,3 +1,33 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@Tanya2376 
+Tanya2376
+/
+RedStar
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+RedStar/css/style.css
+@Tanya2376
+Tanya2376 ыы
+Latest commit 2208e44 6 hours ago
+ History
+ 1 contributor
+947 lines (756 sloc)  16.2 KB
+
 
 /*reset.css*/
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -410,7 +440,7 @@ img{
 }
 .header{
   
-  position: fixed;
+  position:absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -428,6 +458,7 @@ img{
       
 }    
 .header__wrapper{
+
 display: flex;
 flex-wrap: wrap;
 align-items: flex-end;
@@ -435,7 +466,13 @@ justify-content: space-between;
 padding-top: 40px;
 max-width: 1720px;
 height: 24px;
+}
 
+.frame19{
+position: relative;
+width: 22px;
+height: 22px;
+bottom: 9px;
 
 
 }
@@ -451,6 +488,8 @@ color: #FFFFFF;
 padding-left: 34px;
 
 }
+
+
 
 .header__list{
   display: flex;
@@ -472,6 +511,7 @@ margin-right: 160px;
   color: #FFFFFF;
   text-decoration: none;
 }
+
 
 .header__link:hover,.header__link:focus,.header__link:active{
   opacity: .75;
@@ -540,13 +580,23 @@ max-width: 251px;
 }
 
 .benefit-card-desk{
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
-    color: #181818;
-    mix-blend-mode: normal;
-    opacity: 0.4;
+    font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 36px;
+
+color: #181818;
+
+mix-blend-mode: normal;
+
+   
+    
 }
+.benefit-card-desk:hover{
+   opacity: 0.4; 
+}
+    
+
 .benefits__cards{
     display: flex;
     flex-wrap: wrap;
@@ -586,6 +636,7 @@ max-width: 309px;
 .benefits-all{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -638,12 +689,8 @@ max-width: 309px;
     line-height: 36px;
     display: block;
     color: #000000;
-    max-width: 453px;  
-    
-    
+    max-width: 453px;     
 }
-
-
 
 .text_product{
     max-width: 414px;
@@ -653,6 +700,11 @@ max-width: 309px;
     color: #000000;
     padding-right: 35px;
 }
+.text_product:hover{
+    opacity: 0.5;
+   
+ }
+
 .price{
     display: flex;
     justify-content: center;
@@ -690,8 +742,8 @@ max-width: 309px;
     padding-top: 360px;
     border-radius: 25px;
     display: flex;
-    width: 1720px;
-    Height:600px;
+    max-width: 1720px;
+    max-height:600px;
    padding-bottom: 360px; 
     background: url(../img/Rectangle65.jpg) no-repeat right center;   
 }
@@ -704,11 +756,12 @@ max-width: 309px;
 
 .footer__list{
     display: flex;
+  
  
   }
   .footer__item{
  
-    display: flex; 
+    display: flex;
     flex-direction: column;
     
   }
@@ -747,6 +800,12 @@ max-width: 309px;
     
     max-width: 166px;
   }
+  .footer__link-2:hover{
+   
+  opacity: 0.5;
+   
+ }
+
   .footer__link3{
     font-weight: 500;
     font-size: 20px;
@@ -842,6 +901,7 @@ max-width: 309px;
     background-color: #f9f9f9;
     width: 100%;
     left: 0;
+    top:0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -906,8 +966,15 @@ display: flex;
         .header__wrapper{
             width: 100%;
         }
+        .nav__wrapper_nav{
+            width: 100%;
+        }
         
-       
+        .footer__wrapper{
+            width: 100%;
+            
+            
+        }
         }
 
         @media only screen and (max-width: 1420px){
@@ -929,9 +996,16 @@ display: flex;
 
         .img-studio_2{
             width: 100%; 
+            height: 100%;
             margin: 0 auto;
         }
        
+        }
+
+        @media only screen and (max-width: 1160px){
+          .header_nav{
+            position: fixed;
+          }
         }
 
         @media only screen and (max-width: 1140px){
@@ -944,4 +1018,11 @@ display: flex;
                 margin: 0 auto;
                 height:100% ;
             }
+            .footer__list{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+             
         }
+
